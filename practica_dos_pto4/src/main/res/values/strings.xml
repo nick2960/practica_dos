@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">practica_dos_pto4</string>
+
+    <string name="title">Areas Geométricas</string>
+    <string name="action_settings">Settings</string>
+    <string name="r">Radio:</string>
+    <string name="l">Lado:</string>
+    <string name="ba">Base:</string>
+    <string name="h">Altura:</string>
+    <string name="a">Ancho:</string>
+    <string name="la">Largo:</string>
+    <string name="cal">CALCULAR</string>
+    <string name="resu">Resultado</string>
+    <string name="cir">CIRCULO</string>
+    <string name="cua">CUADRADO</string>
+    <string name="tri">TRIANGULO</string>
+    <string name="rec">RECTANGULO</string>
+    <string name="intex">Ingrese valor</string>
+</resources>

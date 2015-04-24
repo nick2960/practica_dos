@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_dos.iml" filepath="$PROJECT_DIR$/practica_dos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_dos_pto1/practica_dos_pto1.iml" filepath="$PROJECT_DIR$/practica_dos_pto1/practica_dos_pto1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_dos_pto2/practica_dos_pto2.iml" filepath="$PROJECT_DIR$/practica_dos_pto2/practica_dos_pto2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_dos_pto3/practica_dos_pto3.iml" filepath="$PROJECT_DIR$/practica_dos_pto3/practica_dos_pto3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_dos_pto4/practica_dos_pto4.iml" filepath="$PROJECT_DIR$/practica_dos_pto4/practica_dos_pto4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica_dos_pto5/practica_dos_pto5.iml" filepath="$PROJECT_DIR$/practica_dos_pto5/practica_dos_pto5.iml" />
+    </modules>
+  </component>
+</project>
+

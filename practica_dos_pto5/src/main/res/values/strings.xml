@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">practica_dos_pto5</string>
+
+    <string name="name">Nombre:</string>
+    <string name="etname">Ingrese el nombre</string>
+    <string name="email">Correo:</string>
+    <string name="etEmail">Ingrese el correo</string>
+    <string name="tel">Telefono:</string>
+    <string name="etTel">Ingrese el Telefono</string>
+    <string name="bOk">OK</string>
+    <string name="tSex">Sexo:</string>
+    <string name="mas">Masculino</string>
+    <string name="fem">Femenino</string>
+    <string name="warn"></string>
+    <string name="hob">HOBBIES</string>
+    <string name="hobmin">Hobbies:</string>
+    <string name="fut">Fútbol</string>
+    <string name="gui">Guitarra</string>
+    <string name="lee">Leer</string>
+    <string name="Tele">Televisión</string>
+    <string name="date">Fecha de nacimiento:</string>
+    <string name="action_settings">Settings</string>
+    <string name="ciu">Ciudad:</string>
+    <string-array name="ciudades">
+        <item>Aguachica Cesar</item>
+        <item>Apartadó Antioquia</item>
+        <item>Arauca Arauca</item>
+        <item>Armenia Quindío</item>
+        <item>Barrancabermeja Santander</item>
+        <item>Barranquilla Atlántico</item>
+        <item>Bello Antioquia</item>
+        <item>Bogotá Distrito Capital</item>
+        <item>Bucaramanga Santander</item>
+        <item>Buenaventura Valle del Cauca</item>
+        <item>Buga Valle del Cauca</item>
+        <item>Cali Valle del Cauca</item>
+        <item>Cartago Valle del Cauca</item>
+        <item>Cartagena Bolívar</item>
+        <item>Caucasia Antioquia</item>
+        <item>Cereté Córdoba</item>
+        <item>Chia Cundinamarca	</item>
+        <item>Ciénaga Magdalena	</item>
+        <item>Cúcuta Norte de Santander	</item>
+        <item>Dosquebradas Risaralda	</item>
+        <item>Duitama Boyacá	</item>
+        <item>Envigado Antioquia	</item>
+        <item>Facatativá Cundinamarca	</item>
+        <item>Florencia Caqueta	</item>
+        <item>Floridablanca Santander	</item>
+        <item>Fusagasugá Cundinamarca	</item>
+        <item>Girardot Cundinamarca	</item>
+        <item>Girón Santander	</item>
+        <item>Ibagué Tolima	</item>
+        <item>Ipiales Nariño	</item>
+        <item>Itagüí Antioquia	</item>
+        <item>Jamundí Valle del Cauca	</item>
+        <item>Lorica Córdoba	</item>
+        <item>Los Patios Norte de Santander	</item>
+        <item>Magangué Bolivar	</item>
+        <item>Maicao Guajira	</item>
+        <item>Malambo Atlántico	</item>
+        <item>Manizales Caldas	</item>
+        <item>Medellín Antioquia	</item>
+        <item>Melgar Tolima	</item>
+        <item>Montería Córdoba	</item>
+        <item>Neiva Huila	</item>
+        <item>Ocaña Norte de Santander	</item>
+        <item>Paipa, Boyacá	</item>
+        <item>Palmira Valle del Cauca	</item>
+        <item>Pamplona Norte de Santander	</item>
+        <item>Pasto Nariño	</item>
+        <item>Pereira Risaralda	</item>
+        <item>Piedecuesta Santander	</item>
+        <item>Pitalito Huila	</item>
+        <item>Popayán Cauca	</item>
+        <item>Quibdó Choco	</item>
+        <item>Riohacha Guajira	</item>
+        <item>Rionegro Antioquia	</item>
+        <item>Sabanalarga Atlántico	</item>
+        <item>Sahagún Córdoba	</item>
+        <item>San Andrés Isla	</item>
+        <item>Santa Marta Magdalena	</item>
+        <item>Sincelejo Sucre	</item>
+        <item>Soacha Cundinamarca	</item>
+        <item>Sogamoso Boyacá	</item>
+        <item>Soledad Atlántico	</item>
+        <item>Tibú Norte de Santander	</item>
+        <item>Tuluá Valle del Cauca	</item>
+        <item>Tumaco Nariño	</item>
+        <item>Tunja Boyacá	</item>
+        <item>Turbo Antioquia	</item>
+        <item>Valledupar Cesar	</item>
+        <item>Villa de leyva	</item>
+        <item>Villa del Rosario Norte de Santander	</item>
+        <item>Villavicencio Meta	</item>
+        <item>Yopal Casanare	</item>
+        <item>Yumbo Valle del Cauca	</item>
+        <item>Zipaquirá Cundinamarca	</item>
+
+    </string-array>
+
+</resources>

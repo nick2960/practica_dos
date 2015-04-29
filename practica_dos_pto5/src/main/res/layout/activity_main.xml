@@ -147,7 +147,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="27dp"
                 android:spinnerMode="dropdown"
-                android:background="@color/white"
+                android:background="@color/maroon"
                 android:drawSelectorOnTop="true"
                 android:entries="@array/ciudades"
                 android:id="@+id/spin"
@@ -245,6 +245,7 @@
                     android:layout_height="wrap_content"
                     android:calendarViewShown="false"
                     android:spinnersShown="true"
+                    android:scrollbarStyle="outsideOverlay"
                     android:id="@+id/dpBorn">
 
                 </DatePicker>

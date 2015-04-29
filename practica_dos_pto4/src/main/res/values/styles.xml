@@ -5,4 +5,25 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="ThemePto4" parent="Base.Theme.AppCompat.Light.DialogWhenLarge">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="StyleNico_Title_pto4">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="StyleNico_Subt">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="StyleNico_OpFig">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">7sp</item>
+    </style>
+    <style name="StyleNico_OpFigLand">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
 </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practica_dos_pto2</string>
+    <string name="title">Calculadora Básica</string>
+    <string name="action_settings">Configuración</string>
+    <string name="Op1">N°1</string>
+    <string name="Op2">N°2</string>
+    <string name="Sum">Sumar</string>
+    <string name="Res">Restar</string>
+    <string name="Prod">Producto</string>
+    <string name="Div">Dividir</string>
+    <string name="Calu">CALCULAR</string>
+    <string name="Rta">Result</string>
+    <string name="inValues">0123456789.-</string>
+</resources>

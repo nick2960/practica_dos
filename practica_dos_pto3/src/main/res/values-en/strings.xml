@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practice_two_point3</string>
+
+    <string name="title">FINAL NOTE</string>
+    <string name="action_settings">Settings</string>
+    <string name="quiz">Exams: </string>
+    <string name="Expo">Expositions: </string>
+    <string name="Lab">Laboratory: </string>
+    <string name="Pro">Project: </string>
+    <string name="innot">Put note</string>
+    <string name="cal">CALCULATE</string>
+    <string name="def">Final Note</string>
+</resources>

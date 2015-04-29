@@ -12,8 +12,7 @@
             android:layout_height="fill_parent"
             android:gravity="center"
             android:text="@string/title"
-            android:textColor="@color/wheat"
-            android:textSize="50dp"
+            android:textAppearance="@style/StyleNico_BigTitle"
             />
 
     </LinearLayout>
@@ -26,8 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="@string/quiz"
-            android:textColor="@color/wheat"
-            android:textSize="30dp"/>
+            android:textAppearance="@style/StyleNico_NormalItems"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -35,8 +33,7 @@
             android:gravity="center"
             android:background="@color/white"
             android:hint="@string/innot"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textAppearance="@style/StyleNico_NormalLetterHint"
             android:inputType="numberDecimal"
             android:id="@+id/etquiz"/>
 
@@ -50,8 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="@string/Expo"
-            android:textColor="@color/wheat"
-            android:textSize="30dp"/>
+            android:textAppearance="@style/StyleNico_NormalItems"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -59,8 +55,7 @@
             android:gravity="center"
             android:background="@color/white"
             android:hint="@string/innot"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textAppearance="@style/StyleNico_NormalLetterHint"
             android:inputType="numberDecimal"
             android:id="@+id/etexp"/>
 
@@ -74,8 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="@string/Lab"
-            android:textColor="@color/wheat"
-            android:textSize="30dp"/>
+            android:textAppearance="@style/StyleNico_NormalItems"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -83,8 +77,7 @@
             android:gravity="center"
             android:background="@color/white"
             android:hint="@string/innot"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textAppearance="@style/StyleNico_NormalLetterHint"
             android:inputType="numberDecimal"
             android:id="@+id/etlab"/>
 
@@ -98,8 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="@string/Pro"
-            android:textColor="@color/wheat"
-            android:textSize="30dp"/>
+            android:textAppearance="@style/StyleNico_NormalItems"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -107,8 +99,7 @@
             android:gravity="center"
             android:background="@color/white"
             android:hint="@string/innot"
-            android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textAppearance="@style/StyleNico_NormalLetterHint"
             android:inputType="numberDecimal"
             android:id="@+id/etpro"/>
 
@@ -138,8 +129,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/def"
-            android:textColor="@color/white"
-            android:textSize="34dp"
+            android:textAppearance="@style/StyleNico_NormalResult"
             android:id="@+id/tvResult"/>
 
         </LinearLayout>

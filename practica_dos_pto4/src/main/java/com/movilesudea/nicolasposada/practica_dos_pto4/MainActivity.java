@@ -6,16 +6,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
     private int tf=1;
+    TextView vtvres;
+    String result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        vtvres = (TextView) findViewById(R.id.tvResult);
     }
 
     public void typeFigure(View view){
@@ -44,7 +47,6 @@ public class MainActivity extends ActionBarActivity {
         final EditText veth = (EditText) findViewById(R.id.etH);
         final EditText veta = (EditText) findViewById(R.id.etA);
         final EditText vetb = (EditText) findViewById(R.id.etB);
-        final TextView vtvres = (TextView) findViewById(R.id.tvResult);
         float r, l, ba, h, a, la;
         boolean extr, extl, extba, exth, exta, extb;
         extr = vetr.getText().toString().equals("");
@@ -55,33 +57,37 @@ public class MainActivity extends ActionBarActivity {
         extb = vetb.getText().toString().equals("");
         switch (tf){
             case 1:
-                if (extr)vtvres.setText("Ingrese valores");
+                if (extr)vtvres.setText(result=("Ingrese valores"));
                 else {
                     r=Float.valueOf(vetr.getText().toString());
-                    vtvres.setText(String.valueOf(redondear(Math.PI*Math.pow(r,2),4)));
+                    result = String.valueOf(redondear(Math.PI*Math.pow(r,2),4));
+                    vtvres.setText(result);
                 }
                 break;
             case 2:
-                if (extl)vtvres.setText("Ingrese valores");
+                if (extl)vtvres.setText(result = ("Ingrese valores"));
                 else {
                     l=Float.valueOf(vetl.getText().toString());
-                    vtvres.setText(String.valueOf(redondear(Math.pow(l,2),4)));
+                    result = String.valueOf(redondear(Math.pow(l,2),4));
+                    vtvres.setText(result);
                 }
                 break;
             case 3:
-                if (extba||exth)vtvres.setText("Ingrese valores");
+                if (extba||exth)vtvres.setText(result =("Ingrese valores"));
                 else {
                     ba=Float.valueOf(vetba.getText().toString());
                     h=Float.valueOf(veth.getText().toString());
-                    vtvres.setText(String.valueOf(redondear((ba*h)/2,4)));
+                    result = String.valueOf(redondear((ba*h)/2,4));
+                    vtvres.setText(result);
                 }
                 break;
             case 4:
-                if (exta||extb)vtvres.setText("Ingrese valores");
+                if (exta||extb)vtvres.setText(result=("Ingrese valores"));
                 else {
                     a=Float.valueOf(veta.getText().toString());
                     la=Float.valueOf(vetb.getText().toString());
-                    vtvres.setText(String.valueOf(redondear(a*la,4)));
+                    result = String.valueOf(redondear(a*la,4));
+                    vtvres.setText(result);
                 }
                 break;
             default:
@@ -91,6 +97,21 @@ public class MainActivity extends ActionBarActivity {
 
     public double redondear( double numero, int decimales ) {
         return Math.round(numero*Math.pow(10,decimales))/Math.pow(10,decimales);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle saveState){
+        super.onSaveInstanceState(saveState);
+        saveState.putInt("tf",tf);
+        saveState.putString("ra", result);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle loadState){
+        super.onRestoreInstanceState(loadState);
+        tf = loadState.getInt("tf");
+        result = loadState.getString("ra");
+        vtvres.setText(result);
     }
 
     @Override

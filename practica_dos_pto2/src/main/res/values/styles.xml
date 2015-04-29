@@ -1,8 +1,28 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="android:Theme.Holo">
         <!-- Customize your theme here. -->
     </style>
+    <style name="OtherTheme" parent="Base.Theme.AppCompat">
 
+    </style>
+    <style name="StyleNico" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">40dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="StyleNico.textcolordark">
+        <item name="android:textColor">@color/ripple_material_dark</item>
+    </style>
+    <style name="StyleNico.textcolorligth">
+        <item name="android:textColor">@color/ripple_material_light</item>
+    </style>
+    <style name="StyleNico_Small_White_portrait">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="StyleNico_Normal_White_landscape">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

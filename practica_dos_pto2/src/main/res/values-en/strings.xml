@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practice_two_point2</string>
+
+    <string name="title">Basic Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="Op1">N°1</string>
+    <string name="Op2">N°2</string>
+    <string name="Sum">Add</string>
+    <string name="Res">Deduct</string>
+    <string name="Prod">Product</string>
+    <string name="Div">Division</string>
+    <string name="Calu">CALCULATE</string>
+    <string name="Rta">Result</string>
+    <string name="inValues">0123456789.-</string>
+
+</resources>

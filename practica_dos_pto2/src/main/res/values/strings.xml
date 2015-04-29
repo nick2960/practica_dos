@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">practica_dos_pto2</string>
 
-    <string name="title">Basic Calculator</string>
+    <string name="title">Calculadora Básica</string>
     <string name="action_settings">Settings</string>
     <string name="Op1">N°1</string>
     <string name="Op2">N°2</string>
@@ -10,7 +10,7 @@
     <string name="Prod">Producto</string>
     <string name="Div">División</string>
     <string name="Calu">Calcular</string>
-    <string name="Rta">Result</string>
+    <string name="Rta">Resultado</string>
     <string name="inValues">0123456789.-</string>
 
 </resources>

@@ -17,11 +17,24 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
     String city,f="",g="",l="",t="";
     int tss=0,hf=0,hg=0,hl=0,ht=0;
+    TextView tvnombre, tvcorreo, tvtelefo,tvsexo,tvciudad,tvwarn,tvhob,tvdate;
+    String no,co,te,se,ci,wa,ho,da;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tvnombre  = (TextView) findViewById(R.id.tvNombre);
+        tvcorreo  = (TextView) findViewById(R.id.tvCorreo);
+        tvtelefo  = (TextView) findViewById(R.id.tvTelefono);
+        tvsexo    = (TextView) findViewById(R.id.tvSexo);
+        tvciudad  = (TextView) findViewById(R.id.tvCiu);
+        tvwarn    = (TextView) findViewById(R.id.warn);
+        tvhob     = (TextView) findViewById(R.id.tvHob);
+        tvdate    = (TextView) findViewById(R.id.tvDat);
+
         final Spinner sciudad = (Spinner) findViewById(R.id.spin);
         final ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.ciudades,android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -44,14 +57,6 @@ public class MainActivity extends ActionBarActivity {
         final EditText vetnombre = (EditText) findViewById(R.id.etName);
         final EditText vetcorreo = (EditText) findViewById(R.id.etCorreo);
         final EditText vettelefo = (EditText) findViewById(R.id.etTelefono);
-        final TextView tvnombre  = (TextView) findViewById(R.id.tvNombre);
-        final TextView tvcorreo  = (TextView) findViewById(R.id.tvCorreo);
-        final TextView tvtelefo  = (TextView) findViewById(R.id.tvTelefono);
-        final TextView tvsexo    = (TextView) findViewById(R.id.tvSexo);
-        final TextView tvciudad  = (TextView) findViewById(R.id.tvCiu);
-        final TextView tvwarn    = (TextView) findViewById(R.id.warn);
-        final TextView tvhob     = (TextView) findViewById(R.id.tvHob);
-        final TextView tvdate    = (TextView) findViewById(R.id.tvDat);
 
         final DatePicker dpborn  = (DatePicker) findViewById(R.id.dpBorn);
 
@@ -60,28 +65,31 @@ public class MainActivity extends ActionBarActivity {
         etc = vetcorreo.getText().toString().equals("");
         ett = vettelefo.getText().toString().equals("");
 
-        if (etn||etc||ett||(tss==0))tvwarn.setText("DATOS INCOMPLETOS");
+        if (etn||etc||ett||(tss==0))tvwarn.setText(wa="DATOS INCOMPLETOS");
         else {
-            tvnombre.setText(vetnombre.getText());
-            tvcorreo.setText(vetcorreo.getText());
-            tvtelefo.setText(vettelefo.getText());
+            no=vetnombre.getText().toString();
+            tvnombre.setText(no);
+            co=vetcorreo.getText().toString();
+            tvcorreo.setText(co);
+            te=vettelefo.getText().toString();
+            tvtelefo.setText(te);
             switch (tss){
                 case 1:
-                    tvsexo.setText("Masculino");
+                    tvsexo.setText(se="Masculino");
                     break;
                 case 2:
-                    tvsexo.setText("Femenino");
+                    tvsexo.setText(se="Femenino");
                     break;
                 default:
                     break;
             }
-            tvciudad.setText(city);
-            if ((hf==0)&&(hg==0)&&(hl==0)&&(ht==0))tvhob.setText("No tiene hobbies");
+            tvciudad.setText(ci=city);
+            if ((hf==0)&&(hg==0)&&(hl==0)&&(ht==0))tvhob.setText(ho="No tiene hobbies");
             else {
-                tvhob.setText(f+g+l+t);
+                tvhob.setText(ho=(f+g+l+t));
             }
-            tvdate.setText(dpborn.getDayOfMonth()+"/"+(dpborn.getMonth()+1)+"/"+dpborn.getYear());
-            tvwarn.setText("");
+            tvdate.setText(da=(dpborn.getDayOfMonth()+"/"+(dpborn.getMonth()+1)+"/"+dpborn.getYear()));
+            tvwarn.setText(wa="");
         }
 
     }
@@ -145,6 +153,42 @@ public class MainActivity extends ActionBarActivity {
             default:
                 break;
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle saveState){
+        super.onSaveInstanceState(saveState);
+        saveState.putString("no",no);
+        saveState.putString("co", co);
+        saveState.putString("te",te);
+        saveState.putString("se", se);
+        saveState.putString("ci",ci);
+        saveState.putString("wa", wa);
+        saveState.putString("ho",ho);
+        saveState.putString("da", da);
+        saveState.putInt("tss",tss);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle loadState){
+        super.onRestoreInstanceState(loadState);
+        no = loadState.getString("no");
+        co = loadState.getString("co");
+        te = loadState.getString("te");
+        se = loadState.getString("se");
+        ci = loadState.getString("ci");
+        wa = loadState.getString("wa");
+        ho = loadState.getString("ho");
+        da = loadState.getString("da");
+        tss = loadState.getInt("tss");
+        tvnombre.setText(no);
+        tvcorreo.setText(co);
+        tvtelefo.setText(te);
+        tvsexo.setText(se);
+        tvciudad.setText(ci);
+        tvwarn.setText(wa);
+        tvhob.setText(ho);
+        tvdate.setText(da);
     }
 
     @Override

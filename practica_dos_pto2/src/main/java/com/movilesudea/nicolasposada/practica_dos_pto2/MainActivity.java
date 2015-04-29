@@ -11,10 +11,13 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
     private int bo=1;
+    TextView vtvresult;
+    String  result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        vtvresult = (TextView) findViewById(R.id.tvResult);
     }
 
     public void selectOp(View view){
@@ -38,32 +41,51 @@ public class MainActivity extends ActionBarActivity {
 
         final EditText vope1 = (EditText) findViewById(R.id.eOp1);
         final EditText vope2 = (EditText) findViewById(R.id.eOp2);
-        final TextView vtvresult = (TextView) findViewById(R.id.tvResult);
         float a, b;
         if ((vope1.getText().toString().equals(""))||(vope2.getText().toString().equals(""))){
-            vtvresult.setText("Ingrese valores");
+            result = "Ingrese valores";
+            vtvresult.setText(result);
         }else {
             a = Float.valueOf(vope1.getText().toString());
             b = Float.valueOf(vope2.getText().toString());
             switch (bo){
                 case 1:
-                    vtvresult.setText(String.valueOf(a + b));
+                    result= String.valueOf(a + b);
+                    vtvresult.setText(result);
                     break;
                 case 2:
-                    vtvresult.setText(String.valueOf(a - b));
+                    result = String.valueOf(a - b);
+                    vtvresult.setText(result);
                     break;
                 case 3:
-                    vtvresult.setText(String.valueOf(a * b));
+                    result = String.valueOf(a * b);
+                    vtvresult.setText(result);
                     break;
                 case 4:
                     if (b==0){
-                        vtvresult.setText("Math Error...");
+                        result ="Math Error...";
+                        vtvresult.setText(result);
                     }else {
-                        vtvresult.setText(String.valueOf(a / b));
+                        result = String.valueOf(a / b);
+                        vtvresult.setText(result);
                     }
                     break;
             }
         }
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle saveState){
+        super.onSaveInstanceState(saveState);
+        saveState.putString("d", result);
+        saveState.putInt("op",bo);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle loadState){
+        super.onRestoreInstanceState(loadState);
+        result = loadState.getString("d");
+        vtvresult.setText(result);
+        bo = loadState.getInt("op");
     }
 
     @Override

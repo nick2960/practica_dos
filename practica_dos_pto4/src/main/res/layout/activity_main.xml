@@ -13,9 +13,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/title"
-            android:textColor="@color/black"
-            android:textSize="35dp"
-            android:gravity="center"
+            android:textAppearance="@style/StyleNico_Title_pto4"
             android:layout_gravity="center_vertical"/>
 
     </LinearLayout>
@@ -33,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cir"
-                android:textColor="@color/green"
+                android:textAppearance="@style/StyleNico_Subt"
                 android:layout_gravity="center"/>
 
 
@@ -78,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cua"
-                android:textColor="@color/green"
+                android:textAppearance="@style/StyleNico_Subt"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
@@ -120,7 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tri"
-                android:textColor="@color/green"
+                android:textAppearance="@style/StyleNico_Subt"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
@@ -193,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/rec"
-                android:textColor="@color/green"
+                android:textAppearance="@style/StyleNico_Subt"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
@@ -266,9 +264,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:text="@string/cir"
-                android:textSize="7dp"
+                android:textAppearance="@style/StyleNico_OpFig"
                 android:checked="true"
-                android:textColor="@color/black"
                 android:onClick="typeFigure"
                 android:id="@+id/rbCir"/>
             <RadioButton
@@ -276,8 +273,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:text="@string/cua"
-                android:textSize="7dp"
-                android:textColor="@color/black"
+                android:textAppearance="@style/StyleNico_OpFig"
                 android:onClick="typeFigure"
                 android:id="@+id/rbCua"/>
             <RadioButton
@@ -285,8 +281,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:text="@string/tri"
-                android:textSize="7dp"
-                android:textColor="@color/black"
+                android:textAppearance="@style/StyleNico_OpFig"
                 android:onClick="typeFigure"
                 android:id="@+id/rbTri"/>
             <RadioButton
@@ -294,8 +289,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:text="@string/rec"
-                android:textSize="6dp"
-                android:textColor="@color/black"
+                android:textAppearance="@style/StyleNico_OpFig"
+                android:textSize="6sp"
                 android:onClick="typeFigure"
                 android:id="@+id/rbRec"/>
         </RadioGroup>

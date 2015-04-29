@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practica_dos_pto4</string>
+
+    <string name="title">Geometric Areas</string>
+    <string name="action_settings">Settings</string>
+    <string name="r">Radius:</string>
+    <string name="l">Side:</string>
+    <string name="ba">Base:</string>
+    <string name="h">Height:</string>
+    <string name="a">Width:</string>
+    <string name="la">Length:</string>
+    <string name="cal">CALCULATE</string>
+    <string name="resu">Result</string>
+    <string name="cir">CIRCLE</string>
+    <string name="cua">SQUARE</string>
+    <string name="tri">TRIANGLE</string>
+    <string name="rec">RECTANGLE</string>
+    <string name="intex">Put value</string>
+</resources>

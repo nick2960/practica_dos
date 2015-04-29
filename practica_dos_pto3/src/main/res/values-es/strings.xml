@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">practica_dos_pto3</string>
+
+    <string name="title">NOTA FINAL</string>
+    <string name="action_settings">Settings</string>
+    <string name="quiz">Quices: </string>
+    <string name="Expo">Exposiciones: </string>
+    <string name="Lab">Laboratorio: </string>
+    <string name="Pro">Proyecto: </string>
+    <string name="innot">Ingrese nota</string>
+    <string name="cal">CALCULAR</string>
+    <string name="def">Definitiva</string>
+</resources>
